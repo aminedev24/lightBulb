@@ -1,0 +1,100 @@
+/* Services.css */
+
+.services-section {
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.service-item {
+  width: 30%;
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.service-item h3 {
+  margin: 1rem 0;
+  color: #007bff;
+}
+
+.service-item p {
+  color: #555;
+}
+
+
+/* responsive.css */
+
+/* Small screen styles */
+@media only screen and (max-width: 768px) {
+  .services-list {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 1rem; /* Reduce gap for smaller screens */
+  }
+
+  .service-item {
+    width: 90%; /* Full width with some margin */
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff; /* Light background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow effect */
+    border-left: 5px solid #007bff; /* Left border for differentiation */
+    text-align: left; /* Align text to left for a different look */
+  }
+
+  .service-item h3 {
+    font-size: 1.5rem; /* Larger heading size */
+    color: #007bff;
+  }
+
+  .service-item p {
+    font-size: 1rem; /* Slightly larger font for text */
+    color: #555;
+  }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .services-list {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .service-item {
+    width: 80%;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1025px) {
+  .services-list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .service-item {
+    width: 30%;
+  }
+}

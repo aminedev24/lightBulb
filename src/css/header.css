@@ -1,0 +1,76 @@
+/* css/header.css */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  position: relative; /* Needed for positioning the menu toggle */
+}
+
+.logo {
+  height: 50px;
+  border-radius: 60px;
+}
+
+.menu-toggle {
+  display: none; /* Hidden by default, visible only on smaller screens */
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the menu toggle button on smaller screens */
+  }
+
+  nav {
+    display: none; /* Hide the menu by default on smaller screens */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  nav.open {
+    display: block; /* Show the menu when open */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack menu items vertically */
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}
