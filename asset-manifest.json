@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/aminedev24/lightBulb.git/static/css/main.ffaed623.css",
-    "main.js": "/aminedev24/lightBulb.git/static/js/main.f339d93b.js",
-    "static/js/453.0bb95fa2.chunk.js": "/aminedev24/lightBulb.git/static/js/453.0bb95fa2.chunk.js",
-    "static/media/logo.svg": "/aminedev24/lightBulb.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/aminedev24/lightBulb.git/index.html",
-    "main.ffaed623.css.map": "/aminedev24/lightBulb.git/static/css/main.ffaed623.css.map",
-    "main.f339d93b.js.map": "/aminedev24/lightBulb.git/static/js/main.f339d93b.js.map",
-    "453.0bb95fa2.chunk.js.map": "/aminedev24/lightBulb.git/static/js/453.0bb95fa2.chunk.js.map"
+    "main.css": "/aminedev24/lightBulb/static/css/main.ffaed623.css",
+    "main.js": "/aminedev24/lightBulb/static/js/main.c3b93cc7.js",
+    "static/js/453.0bb95fa2.chunk.js": "/aminedev24/lightBulb/static/js/453.0bb95fa2.chunk.js",
+    "static/media/logo.svg": "/aminedev24/lightBulb/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/aminedev24/lightBulb/index.html",
+    "main.ffaed623.css.map": "/aminedev24/lightBulb/static/css/main.ffaed623.css.map",
+    "main.c3b93cc7.js.map": "/aminedev24/lightBulb/static/js/main.c3b93cc7.js.map",
+    "453.0bb95fa2.chunk.js.map": "/aminedev24/lightBulb/static/js/453.0bb95fa2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffaed623.css",
-    "static/js/main.f339d93b.js"
+    "static/js/main.c3b93cc7.js"
   ]
 }
