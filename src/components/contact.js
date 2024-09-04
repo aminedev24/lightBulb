@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className="contact-section">
       <h2>Contact Us</h2>
       <p>Email: contact@electricmaintenance.com</p>
-      <p>Phone: +123 456 789</p>
+      <p>Phone: 023-368-3905</p>
       <form className="contact-form">
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />

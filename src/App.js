@@ -1,21 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import Contact from './components/contact';
-import Services from './components/services';
-import Hero from './components/homepage';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/header';
-import './css/responsive.css';
+import Home from './components/homepage';
+import About from './components/about';
+import Services from './components/services';
+import Contact from './components/contact';
+import './App.css';
 import Footer from './components/footer';
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     <Header />
-     <Hero />
-     <Services />
-     <Contact />
-     <Footer />
-    </div>
+    <Router>
+      <Header /> {/* The Header is outside the Routes so it remains on every page */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;

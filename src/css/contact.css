@@ -1,37 +1,94 @@
-/* Contact.css */
-
 .contact-section {
-    padding: 2rem;
-    background-color: #fff;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-  }
-  
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.contact-section a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: #0056b3;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
   .contact-form input,
   .contact-form textarea {
-    width: 80%;
-    max-width: 400px;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    max-width: 90%;
   }
-  
+
   .contact-form button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
     font-size: 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px;
   }
-  
-  .contact-form button:hover {
-    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .contact-form input,
+  .contact-form textarea {
+    max-width: 100%;
   }
-  
+
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
