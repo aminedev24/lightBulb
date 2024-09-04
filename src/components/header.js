@@ -19,10 +19,10 @@ const Header = () => {
       </button>
       <nav className={isMenuOpen ? 'open' : ''}>
         <ul>
-        <li><Link to="lightBulb/home" onClick={toggleMenu}>Home</Link></li>
-          <li><Link to="lightBulb/services" onClick={toggleMenu}>Services</Link></li>
-          <li><Link to="lightBulb/about" onClick={toggleMenu}>About</Link></li>
-          <li><Link to="lightBulb/contact" onClick={toggleMenu}>Contact</Link></li>
+        <li><Link to="/home" onClick={toggleMenu}>Home</Link></li>
+          <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>
+          <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
+          <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
         </ul>
       </nav>
     </header>
