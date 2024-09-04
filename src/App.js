@@ -13,10 +13,10 @@ const App = () => {
     <Router>
       <Header /> {/* The Header is outside the Routes so it remains on every page */}
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="lightBulb/home" element={<Home />} />
+        <Route path="lightBulb/about" element={<About />} />
+        <Route path="lightBulb/services" element={<Services />} />
+        <Route path="lightBulb/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
