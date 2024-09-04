@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header>
-      <h4>Towa Denki </h4>
+      <h4>Towa Denki</h4>
       {/*<img src={"assets/logo.jfif"} alt="Company Logo" className="logo" />*/}
       <button className="menu-toggle" onClick={toggleMenu}>
         ☰ {/* Hamburger icon */}
