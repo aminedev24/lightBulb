@@ -6,7 +6,7 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section id="home" className="home-section">
-        <img src={"/assets/electric-tools-table.jpg"} alt="Electrical Maintenance" className="hero-image" />
+        <img src={"assets/electric-tools-table.jpg"} alt="Electrical Maintenance" className="hero-image" />
         <div className="hero-content">
           <h1>Welcome to Our Electricity Maintenance Company</h1>
           <p>We provide comprehensive services including home appliance installation, electricity leak repairs, troubleshooting, safety inspections, and more!</p>
