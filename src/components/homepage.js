@@ -51,7 +51,7 @@ const Home = () => {
             installation, electricity leak repairs, troubleshooting, safety
             inspections, and more!
           </p>
-          <a href="lightBulb/contact" className="cta-button">
+          <a href="/contact" className="cta-button">
             Get a Free Quote
           </a>
         </div>
@@ -71,7 +71,7 @@ const Home = () => {
           systems. Our mission is to deliver reliable and affordable solutions
           for all your electrical needs.
         </p>
-        <a href="lightBulb/about" className="learn-more">
+        <a href="/about" className="learn-more">
           Learn More About Us
         </a>
       </section>
@@ -88,7 +88,7 @@ const Home = () => {
           range of services tailored to meet your needs. Our team is equipped to
           handle any electrical issue with professionalism and care.
         </p>
-        <a href="lightBulb/services" className="learn-more">
+        <a href="/services" className="learn-more">
           Explore Our Services
         </a>
       </section>
@@ -98,9 +98,9 @@ const Home = () => {
         className="cta-section"
         ref={(el) => (sectionRefs.current[3] = el)}
       >
-        <h2>Ready to Work with Us?</h2>
+        <h2>Do you need help?</h2>
         <p>Contact us today to schedule a service or get a free quote.</p>
-        <a href="lightBulb/contact" className="cta-button">
+        <a href="/contact" className="cta-button">
           Contact Us
         </a>
       </section>
