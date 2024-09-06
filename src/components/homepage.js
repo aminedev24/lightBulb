@@ -56,14 +56,7 @@ const Home = () => {
           </a>
         </section>
 
-        {/* Call to Action Section */}
-        <section className="cta-section">
-          <h2>Do you need help?</h2>
-          <p>Contact us today to schedule a service or get a free quote.</p>
-          <a href="#/contact" className="cta-button">
-            Contact Us
-          </a>
-        </section>
+       
       </AnimateOnScroll>
     </>
   );

@@ -263,8 +263,7 @@
 /* General Section Styles */
 .home-section,
 .about-us,
-.services-preview,
-.cta-section {
+.services-preview {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;

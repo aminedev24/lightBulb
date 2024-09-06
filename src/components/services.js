@@ -5,6 +5,7 @@ import React from 'react';
 import '../css/services.css';
 const Services = () => {
   return (
+    <>
     <section id="services" className="services-section">
       <h2>Our Services</h2>
       <div className="services-list">
@@ -25,6 +26,16 @@ const Services = () => {
         </div>
       </div>
     </section>
+
+     {/* Call to Action Section */}
+     <section className="cta-section">
+     <h2>Do you need help?</h2>
+     <p>Contact us today to schedule a service or get a free quote.</p>
+     <a href="#/contact" className="cta-button">
+       Contact Us
+     </a>
+   </section>
+   </>
   );
 }
 
