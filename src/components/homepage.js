@@ -51,7 +51,7 @@ const Home = () => {
             installation, electricity leak repairs, troubleshooting, safety
             inspections, and more!
           </p>
-          <a href="/contact" className="cta-button">
+          <a href="lightBulb/contact" className="cta-button">
             Get a Free Quote
           </a>
         </div>
