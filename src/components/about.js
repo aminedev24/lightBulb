@@ -55,7 +55,7 @@ const About= () => {
             </ul>
           </div>
           <div className="section-image">
-            <img src="assets/value.jpg" alt="Our Values" />
+            <img src={`${process.env.PUBLIC_URL}/assets/value.jpg" alt="Our Values" `}/>
           </div>
         </div>
 
