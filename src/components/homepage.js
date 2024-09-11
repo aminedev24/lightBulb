@@ -29,7 +29,7 @@ const Home = () => {
         {/* About Us Section */}
         <section id="about" className="about-us">
           <h2>About Us</h2>
-          <p>
+          <p className='about-us-text'>
             We are a dedicated team of professionals committed to providing
             high-quality electrical maintenance services. With years of
             experience, we ensure the safety and efficiency of your electrical
@@ -85,14 +85,14 @@ const Home = () => {
             <h2>Our Key Features</h2>
             <div class="feature-grid">
               <div class="feature-item">
-                <img  src={`${process.env.PUBLIC_URL}/assets/fast.jpg`} alt="Feature 1 Icon" />
+                <img  src={`${process.env.PUBLIC_URL}/assets/fast.png`} alt="Feature 1 Icon" />
                 <h3>Fast Service</h3>
                 <p>Experience quick and efficient service that meets your needs.</p>
               </div>
-              <div class="feature-item">
-                <img src={`${process.env.PUBLIC_URL}/assets/shield.png`} alt="Feature 2 Icon" />
-                <h3>Secure Transactions</h3>
-                <p>Your security is our priority with top-notch protection measures.</p>
+              <div className="feature-item">
+                <img src={`${process.env.PUBLIC_URL}/assets/maintenance.png`} alt="Feature 2 Icon" />
+                <h3>Comprehensive Maintenance</h3>
+                <p>Expert electrical maintenance for peak performance and safety.</p>
               </div>
               <div class="feature-item">
                 <img  src={`${process.env.PUBLIC_URL}/assets/customer-support.png`} alt="Feature 3 Icon" />
@@ -104,22 +104,7 @@ const Home = () => {
         </section>
 
 
-        <section class="testimonials">
-          <h2>What Our Clients Say</h2>
-          <div class="testimonial-slider">
-            <div class="testimonial-item">
-              <img src="client1.jpg" alt="Client 1" />
-              <p>"Outstanding service! Highly recommended."</p>
-              <h4>- John Doe</h4>
-            </div>
-            <div class="testimonial-item">
-              <img src="client2.jpg" alt="Client 2" />
-              <p>"Quick, efficient, and reliable. Excellent experience!"</p>
-              <h4>- Jane Smith</h4>
-            </div>
-          </div>
-        </section>
-
+        
       </AnimateOnScroll>
     </>
   );

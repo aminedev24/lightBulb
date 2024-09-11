@@ -1,158 +1,140 @@
+/* About Page Styles */
 .about-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  background-color: #f7f7f7;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
 }
 
+.about-us-text{
+  padding: 30px;
+}
+
+.value-image {
+  height: 500px !important;
+}
 .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 2rem;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-title {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 3rem;
+  color: #007bff;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .section-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
+  margin-bottom: 4rem;
+  gap: 2rem;
 }
 
-.section-image {
-  width: 30%;
-  height: 100%;
-  object-fit: cover;
-  margin-right: 2rem;
+.section-container.reverse {
+  flex-direction: row-reverse;
 }
 
 .section-text {
-  width: 70%;
-  padding: 2rem;
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 1rem;
 }
 
 .section-text h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  color: #007bff;
   margin-bottom: 1rem;
 }
 
 .section-text p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.section-image {
+  flex: 1;
+  text-align: center;
+}
+
+.section-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .values-container {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 95%;
 }
 
 .values-list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
-  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .values-list li {
-  font-size: 1rem;
-  line-height: 1.5;
   margin-bottom: 1rem;
-}
-
-.values-list li strong {
-  font-weight: bold;
 }
 
 .mission-vision-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
 }
 
 .mission-vision-item {
-  width: 100%;
+  background-color: #fff;
   padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .mission-vision-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mission-vision-item {
+    flex: 1;
+    margin: 0 1rem;
+  }
 }
 
 .mission-vision-item h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  color: #007bff;
   margin-bottom: 1rem;
 }
 
 .mission-vision-item p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
+
+.mission-vision-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-  }
-
-  .content-container {
-    flex-direction: column;
-  }
-
   .section-container {
     flex-direction: column;
   }
 
-  .section-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-right: 0;
-  }
-
-  .section-text {
-    width: 100%;
-    padding: 2rem;
-  }
-
-  .values-container {
+  .section-container.reverse {
     flex-direction: column;
-    width: 90%;
-  }
-
-  .values-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .values-list li {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-
-  .values-list li strong {
-    font-weight: bold;
   }
 
   .mission-vision-content {
@@ -160,19 +142,35 @@
   }
 
   .mission-vision-item {
-    width: 100%;
-    padding: 2rem;
-  }
-
-  .mission-vision-item h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-
-  .mission-vision-item p {
-    font-size: 1rem;
-    line-height: 1.5;
     margin-bottom: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .section-text h2 {
+    font-size: 2rem;
+  }
+
+  .section-text p,
+  .mission-vision-item p {
+    font-size: 1rem;
+  }
+
+  .section-image img {
+    border-radius: 4px;
+  }
+
+  .values-list {
+    font-size: 1rem;
+  }
+}
+
+
+.value-image {
+  height: 500px !important;
+}
+
