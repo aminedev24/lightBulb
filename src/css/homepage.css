@@ -1,28 +1,29 @@
+
+
 /* Hero Section */
 .home-section {
-  text-align: center;
-  background-color: #fff;
-  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 450px; /* Consistent height */
-  animation: fadeIn 1.5s ease-in-out;
+  height: 60vh;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
 }
 
 .hero-image {
   width: 100%;
-  max-height: 450px;
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  filter: brightness(70%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-
-.hero-image:hover {
-  transform: scale(1.05);
-}
-
 .hero-content {
+  top: 20%;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem;
@@ -39,238 +40,193 @@
   align-items: center;
   box-sizing: border-box;
   animation: slideUp 1.2s ease-out;
-  opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
 }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes slideUp {
-  0% { transform: translateY(100px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
-}
 
 .hero-content h1 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  animation: textFadeIn 1s ease-in-out;
 }
 
 .hero-content p {
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  line-height: 1.6;
-  font-size: 1rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  animation: textFadeIn 1.2s ease-in-out;
-  animation-delay: 0.3s;
-}
-
-@keyframes textFadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
 }
 
 .cta-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   display: inline-block;
-  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: #0056b3;
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .home-section {
-    height: 350px;
-  }
-
-  .hero-content {
-    width: 90%;
-    padding: 1.5rem;
-  }
-
-  .hero-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-
-  .cta-button {
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 510px) {
-  .hero-content {
-    width: 90%;
-    padding: 1.2rem;
-  }
-
-  .hero-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-content p {
-    font-size: 0.8rem;
-  }
-
-  .cta-button {
-    padding: 8px 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-content {
-    width: 95%;
-    padding: 1rem;
-  }
-
-  .hero-content h1 {
-    font-size: 1.3rem;
-  }
-
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-
-  .cta-button {
-    padding: 6px 12px;
-  }
-
-  .hero-image {
-    width: unset;
-  }
-}
-
-/* General Styles for About Us and Services Sections */
-.about-us, .services-preview {
-  padding: 3rem;
+/* About Us Section */
+.about-us {
+  padding: 4rem 2rem;
   background-color: #f9f9f9;
   text-align: center;
-  margin-top: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: fadeInUp 1s ease-in-out;
 }
 
-@keyframes fadeInUp {
-  0% { transform: translateY(20px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+.about-us h2 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 1.5rem;
 }
 
-.about-us h2, .services-preview h2 {
-  color: #333;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  position: relative;
-  animation: slideInLeft 0.8s ease-out;
-}
-
-@keyframes slideInLeft {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
-}
-
-.about-us p, .services-preview p {
+.about-us p {
+  max-width: 700px;
+  margin: 0 auto;
   font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  animation: textFadeIn 1.2s ease-in-out;
+  line-height: 1.7;
 }
 
 .learn-more {
   display: inline-block;
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  color: #007bff;
-  text-decoration: none;
-  border: 2px solid #007bff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
 }
 
 .learn-more:hover {
-  background-color: #007bff;
-  color: #fff;
-  transform: scale(1.1);
+  background-color: #0056b3;
 }
 
-/* Call to Action Section */
-.cta-section {
-  background-color: #007bff;
-  color: #fff;
-  padding: 2rem;
-  margin-top: 2rem;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: slideInRight 1s ease-out;
-}
-
-@keyframes slideInRight {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(0); }
-}
-
-.cta-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-.cta-section p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-}
-
-.cta-button {
-  background-color: #fff;
-  color: #007bff;
-  border: 2px solid #fff;
-  padding: 12px 24px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #f0f0f0;
-  color: #0056b3;
-  transform: scale(1.05);
-}
-
-
-/* General Section Styles */
-.home-section,
-.about-us,
+/* Services Section */
 .services-preview {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-/* Animation Styles */
-.animate-section {
-  opacity: 1;
-  transform: translateY(0);
+.services-preview h2 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+.services-preview p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+.reasons-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.reason-item {
+  max-width: 300px;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 2rem;
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  max-width: 250px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item img {
+  max-width: 50px;
+  margin-bottom: 1rem;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #007bff;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-slider {
+  display: flex;
+  overflow: auto;
+  gap: 2rem;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.testimonial-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  max-width: 300px;
+  background-color: #fff;
+  color: #333;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
