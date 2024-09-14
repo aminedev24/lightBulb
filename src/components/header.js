@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header>
       <h1 className="logo">
-        <Link to='/lightBulb'>Towa Denki</Link>
+        <Link to='/'>Towa Denki</Link>
       </h1>
 
       <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
