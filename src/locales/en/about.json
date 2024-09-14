@@ -1,0 +1,38 @@
+{
+    "about": {
+      "title": "About Us",
+      "storyTitle": "Our Story",
+      "storyDescription": "Towa Denki was founded on the principles of integrity, hard work, and a passion for solving complex electrical challenges. From our humble beginnings as a small local business, we have grown into a well-known electrical maintenance company renowned for our exceptional craftsmanship and customer service.",
+      "storyImageAlt": "Our Story",
+      "teamTitle": "Our Team",
+      "teamDescription": "Our success is driven by our people. Our team is composed of highly skilled and certified electricians who bring years of experience to every project. We believe in continuous learning and stay up-to-date with the latest industry trends and technologies.",
+      "teamImageAlt": "Our Team",
+      "valuesTitle": "Our Values",
+      "valuesImageAlt": "Our Values",
+      "values": {
+        "quality": {
+          "title": "Quality",
+          "description": "We are committed to delivering the highest quality of work, ensuring that every project we undertake is completed to perfection. Our attention to detail and dedication to excellence set us apart in the industry."
+        },
+        "safety": {
+          "title": "Safety",
+          "description": "Safety is at the forefront of everything we do. We adhere to strict safety protocols to protect our team, our clients, and their properties. Our rigorous safety measures ensure that every project is completed without incident."
+        },
+        "integrity": {
+          "title": "Integrity",
+          "description": "We believe in doing the right thing, always. Our transparent and honest approach has earned us the trust of our clients and partners. We hold ourselves accountable to the highest ethical standards."
+        },
+        "customerSatisfaction": {
+          "title": "Customer Satisfaction",
+          "description": "Our clients are our top priority. We listen to your needs, provide expert advice, and work tirelessly to ensure your satisfaction. Our commitment to delivering exceptional service is reflected in our long-term client relationships."
+        }
+      },
+      "missionTitle": "Our Mission",
+      "missionDescription": "Our mission is to provide exceptional electrical services that enhance the safety, functionality, and comfort of our clients’ homes and businesses. We strive to exceed expectations through reliable, high-quality solutions tailored to each client's needs.",
+      "missionImageAlt": "Our Mission",
+      "visionTitle": "Our Vision",
+      "visionDescription": "Our vision is to be the leading electrical construction company in the region, recognized for our quality workmanship, innovation, and customer service. We aim to set new standards in the industry and continue to grow as a trusted partner for all electrical needs.",
+      "visionImageAlt": "Our Vision"
+    }
+  }
+  

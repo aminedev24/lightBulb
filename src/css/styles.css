@@ -27,3 +27,24 @@ body {
     border: none;
   }
   
+
+  .language-switcher {
+    margin-left: auto; /* Push it to the right */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .language-switcher button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .language-switcher button:hover {
+    background-color: #0056b3;
+  }
+  

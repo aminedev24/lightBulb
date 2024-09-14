@@ -1,0 +1,38 @@
+{
+    "services": {
+      "title": "Our Services",
+      "description": "Explore the range of services we offer to meet your electrical needs.",
+      "items": {
+        "homeApplianceInstallation": {
+          "title": "Home Appliance Installation",
+          "description": "Professional installation of all types of home appliances with safety and efficiency in mind."
+        },
+        "electricityLeakRepairs": {
+          "title": "Electricity Leak Repairs",
+          "description": "Quick and effective repair services to ensure your home or office is safe from electrical hazards."
+        },
+        "troubleshootingElectricalIssues": {
+          "title": "Troubleshooting Electrical Issues",
+          "description": "Identify and resolve all kinds of electrical issues to keep your appliances and systems running smoothly."
+        },
+        "electricalFixtureInstallation": {
+          "title": "Electrical Fixture Installation",
+          "description": "Install and upgrade various electrical fixtures to enhance functionality and aesthetics."
+        },
+        "outdoorLightingInstallation": {
+          "title": "Outdoor Lighting Installation",
+          "description": "Install outdoor lighting to improve visibility and security around your property."
+        },
+        "remodeling": {
+          "title": "Remodelling",
+          "description": "Update and remodel your electrical system to meet new design and functionality needs."
+        }
+      },
+      "cta": {
+        "title": "Do you need help?",
+        "description": "Contact us today to schedule a service or get a free quote.",
+        "button": "Contact Us"
+      }
+    }
+  }
+  

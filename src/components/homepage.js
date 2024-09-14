@@ -1,8 +1,11 @@
 import React from 'react';
 import AnimateOnScroll from './animateOnScroll';
 import '../css/homepage.css';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const Home = () => {
+  const { t } = useTranslation('home'); // Use the t function for translations
+
   return (
     <>
       <AnimateOnScroll>
@@ -14,97 +17,76 @@ const Home = () => {
             className="hero-image"
           />
           <div className="hero-content">
-            <h1>Welcome to Towa Denki</h1>
-            <p>
-              We provide comprehensive services including home appliance
-              installation, electricity leak repairs, troubleshooting, safety
-              inspections, and more!
-            </p>
+            <h1>{t('home.heroTitle')}</h1>
+            <p>{t('home.heroDescription')}</p>
             <a href="#/contact" className="cta-button">
-              Get a Free Quote
+              {t('home.ctaButton')}
             </a>
           </div>
         </section>
 
         {/* About Us Section */}
         <section id="about" className="about-us">
-          <h2>About Us</h2>
-          <p className='about-us-text'>
-            We are a dedicated team of professionals committed to providing
-            high-quality electrical maintenance services. With years of
-            experience, we ensure the safety and efficiency of your electrical
-            systems. Our mission is to deliver reliable and affordable solutions
-            for all your electrical needs.
+          <h2>{t('home.aboutTitle')}</h2>
+          <p className="about-us-text">
+            {t('home.aboutDescription')}
           </p>
           <a href="#/about" className="learn-more">
-            Learn More About Us
+            {t('home.learnMore')}
           </a>
         </section>
 
         {/* Services Section */}
         <section id="services" className="services-preview">
-          <h2>Our Services</h2>
-          <p>
-            From home appliance installation to emergency repairs, we offer a
-            wide range of services tailored to meet your needs. Our team is
-            equipped to handle any electrical issue with professionalism and
-            care.
-          </p>
+          <h2>{t('home.servicesTitle')}</h2>
+          <p>{t('home.servicesDescription')}</p>
           <a href="#/services" className="learn-more">
-            Explore Our Services
+            {t('home.exploreServices')}
           </a>
         </section>
 
         {/* Why Choose Us Section */}
         <section id="why-choose-us" className="why-choose-us">
-          <h2>Why Choose Us?</h2>
+          <h2>{t('home.whyChooseUsTitle')}</h2>
           <div className="reasons-container">
             <div className="reason-item">
-              <h3>Expertise & Experience</h3>
-              <p>
-                Our team consists of highly skilled professionals with years of experience in the electrical industry. We stay updated with the latest industry trends to provide innovative solutions.
-              </p>
+              <h3>{t('home.expertiseTitle')}</h3>
+              <p>{t('home.expertiseDescription')}</p>
             </div>
             <div className="reason-item">
-              <h3>Quality Assurance</h3>
-              <p>
-                We are committed to delivering the highest quality of work, ensuring that every project is completed to perfection with strict adherence to safety protocols.
-              </p>
+              <h3>{t('home.qualityAssuranceTitle')}</h3>
+              <p>{t('home.qualityAssuranceDescription')}</p>
             </div>
             <div className="reason-item">
-              <h3>Customer-Centric Approach</h3>
-              <p>
-                Our clients are our top priority. We listen to your needs, provide expert advice, and work tirelessly to ensure your satisfaction.
-              </p>
+              <h3>{t('home.customerCentricTitle')}</h3>
+              <p>{t('home.customerCentricDescription')}</p>
             </div>
           </div>
         </section>
 
-        <section class="features">
-          <div class="container">
-            <h2>Our Key Features</h2>
-            <div class="feature-grid">
-              <div class="feature-item">
-                <img  src={`${process.env.PUBLIC_URL}/assets/fast.png`} alt="Feature 1 Icon" />
-                <h3>Fast Service</h3>
-                <p>Experience quick and efficient service that meets your needs.</p>
+        {/* Features Section */}
+        <section className="features">
+          <div className="container">
+            <h2>{t('home.featuresTitle')}</h2>
+            <div className="feature-grid">
+              <div className="feature-item">
+                <img src={`${process.env.PUBLIC_URL}/assets/fast.png`} alt="Feature 1 Icon" />
+                <h3>{t('home.fastServiceTitle')}</h3>
+                <p>{t('home.fastServiceDescription')}</p>
               </div>
               <div className="feature-item">
                 <img src={`${process.env.PUBLIC_URL}/assets/maintenance.png`} alt="Feature 2 Icon" />
-                <h3>Comprehensive Maintenance</h3>
-                <p>Expert electrical maintenance for peak performance and safety.</p>
+                <h3>{t('home.comprehensiveMaintenanceTitle')}</h3>
+                <p>{t('home.comprehensiveMaintenanceDescription')}</p>
               </div>
-              <div class="feature-item">
-                <img  src={`${process.env.PUBLIC_URL}/assets/customer-support.png`} alt="Feature 3 Icon" />
-                <h3>24/7 Support</h3>
-                <p>Our support team is available anytime, anywhere.</p>
+              <div className="feature-item">
+                <img src={`${process.env.PUBLIC_URL}/assets/customer-support.png`} alt="Feature 3 Icon" />
+                <h3>{t('home.supportTitle')}</h3>
+                <p>{t('home.supportDescription')}</p>
               </div>
             </div>
           </div>
         </section>
-
-
-        
       </AnimateOnScroll>
     </>
   );

@@ -1,4 +1,4 @@
-/* Global Styles */ 
+/* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -46,8 +46,8 @@ a:hover {
 }
 
 .hero-content {
-  top: 20%;
   position: absolute;
+  top: 20%;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem;
   color: #333;
@@ -62,23 +62,26 @@ a:hover {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  animation: slideUp 1.2s ease-out;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
+  animation: slideUp 1.2s ease-out forwards;
+}
+
+.hero-content h1, .hero-content p {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
 }
 
 .hero-content h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
-  animation: fadeIn 1s ease-out forwards 0.8s;
+  animation-delay: 0.8s;
 }
 
 .hero-content p {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
   line-height: 1.5;
-  animation: fadeIn 1s ease-out forwards 1s;
+  animation-delay: 1s;
 }
 
 .cta-button {
@@ -109,7 +112,10 @@ a:hover {
   border-radius: 12px;
   margin: 2rem auto;
   max-width: 1200px;
-  animation: fadeInUp 1.5s ease-out forwards 1s;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.about-us h2, .about-us p {
   opacity: 0;
 }
 
@@ -117,7 +123,8 @@ a:hover {
   font-size: 2.4rem;
   color: #007bff;
   margin-bottom: 1.5rem;
-  animation: fadeIn 1s ease-out forwards 1.2s;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 1s;
 }
 
 .about-us p {
@@ -125,7 +132,8 @@ a:hover {
   margin: 0 auto;
   font-size: 1.2rem;
   line-height: 1.8;
-  animation: fadeInUp 1.5s ease-out forwards 1.5s;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 1.2s;
 }
 
 .learn-more {
@@ -136,8 +144,6 @@ a:hover {
   background-color: #007bff;
   border-radius: 50px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  animation: slideInLeft 1s ease-out forwards 1.8s;
- 
 }
 
 .learn-more:hover {
@@ -155,7 +161,10 @@ a:hover {
   border-radius: 12px;
   margin: 2rem auto;
   max-width: 1200px;
-  animation: fadeInUp 1.5s ease-out forwards 2s;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.services-preview h2, .services-preview p {
   opacity: 0;
 }
 
@@ -163,7 +172,8 @@ a:hover {
   font-size: 2.4rem;
   color: #007bff;
   margin-bottom: 1.5rem;
-  animation: fadeIn 1s ease-out forwards 2.2s;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 1.2s;
 }
 
 .services-preview p {
@@ -171,7 +181,8 @@ a:hover {
   margin: 0 auto 1.5rem;
   font-size: 1.2rem;
   line-height: 1.8;
-  animation: fadeInUp 1.5s ease-out forwards 2.5s;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 1.5s;
 }
 
 /* Why Choose Us Section */
@@ -183,7 +194,10 @@ a:hover {
   border-radius: 12px;
   margin: 2rem auto;
   max-width: 1200px;
-  animation: fadeInUp 1.5s ease-out forwards 2.8s;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.why-choose-us h2, .reason-item {
   opacity: 0;
 }
 
@@ -191,7 +205,8 @@ a:hover {
   font-size: 2.4rem;
   color: #007bff;
   margin-bottom: 1.5rem;
-  animation: fadeIn 1s ease-out forwards 3s;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 1.5s;
 }
 
 .reasons-container {
@@ -208,8 +223,7 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 1.5s ease-out forwards 3.2s;
-  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 
 .reason-item:hover {
@@ -226,7 +240,10 @@ a:hover {
   border-radius: 12px;
   margin: 2rem auto;
   max-width: 1200px;
-  animation: fadeInUp 1.5s ease-out forwards 3.5s;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.features h2, .feature-item {
   opacity: 0;
 }
 
@@ -234,7 +251,8 @@ a:hover {
   font-size: 2.4rem;
   color: #007bff;
   margin-bottom: 2rem;
-  animation: fadeIn 1s ease-out forwards 3.7s;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 1.7s;
 }
 
 .feature-grid {
@@ -252,8 +270,7 @@ a:hover {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 1.5s ease-out forwards 4s;
-  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 
 .feature-item img {
@@ -266,5 +283,29 @@ a:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(1.1); }
+  to { transform: scale(1); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}

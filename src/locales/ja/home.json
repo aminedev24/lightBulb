@@ -1,0 +1,28 @@
+{
+    "home": {
+      "heroTitle": "ようこそTowa Denkiへ",
+      "heroDescription": "家庭用電化製品の設置、漏電修理、トラブルシューティング、安全点検など、幅広いサービスを提供しています。",
+      "ctaButton": "無料見積もりを依頼",
+      "aboutTitle": "私たちについて",
+      "aboutDescription": "私たちは、高品質の電気メンテナンスサービスを提供することに専念しているプロフェッショナルチームです。何年もの経験を持ち、電気システムの安全性と効率性を確保します。私たちの使命は、すべての電気的ニーズに対して信頼性のある手頃なソリューションを提供することです。",
+      "learnMore": "詳細はこちら",
+      "servicesTitle": "サービス内容",
+      "servicesDescription": "家電の設置から緊急修理まで、お客様のニーズに合わせた幅広いサービスを提供しています。",
+      "exploreServices": "サービスを見る",
+      "whyChooseUsTitle": "私たちを選ぶ理由",
+      "expertiseTitle": "専門知識と経験",
+      "expertiseDescription": "当社のチームは、電気業界での豊富な経験を持つ熟練したプロフェッショナルで構成されています。",
+      "qualityAssuranceTitle": "品質保証",
+      "qualityAssuranceDescription": "私たちは、すべてのプロジェクトが完璧に完了することを保証し、安全プロトコルに厳密に従います。",
+      "customerCentricTitle": "顧客中心のアプローチ",
+      "customerCentricDescription": "お客様の満足が最優先です。",
+      "featuresTitle": "主な機能",
+      "fastServiceTitle": "迅速なサービス",
+      "fastServiceDescription": "お客様のニーズに合った迅速かつ効率的なサービスを提供します。",
+      "comprehensiveMaintenanceTitle": "包括的なメンテナンス",
+      "comprehensiveMaintenanceDescription": "安全性を最大化するための専門的な電気メンテナンスを提供します。",
+      "supportTitle": "24時間365日のサポート",
+      "supportDescription": "サポートチームはいつでも、どこでも対応します。"
+    }
+  }
+  

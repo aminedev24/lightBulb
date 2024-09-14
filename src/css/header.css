@@ -1,5 +1,4 @@
-/* css/header.css */
-
+/* General styles for the header */
 header {
   display: flex;
   align-items: center;
@@ -8,11 +7,27 @@ header {
   background-color: #333;
   color: #fff;
   position: relative; /* Needed for positioning the menu toggle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  background-color: #444;
 }
 
 .logo {
-  height: 50px;
-  border-radius: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: #007bff;
 }
 
 .menu-toggle {
@@ -22,6 +37,11 @@ header {
   color: #fff;
   font-size: 2rem;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: #007bff;
 }
 
 nav ul {
@@ -29,6 +49,7 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  transition: transform 0.3s ease;
 }
 
 nav ul li {
@@ -38,11 +59,20 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
   color: #007bff;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu.open ul {
+  transform: translateX(0); /* Show the menu when open */
 }
 
 /* Responsive styles */
@@ -51,7 +81,7 @@ nav ul li a:hover {
     display: block; /* Show the menu toggle button on smaller screens */
   }
 
-  nav {
+  .nav-menu {
     display: none; /* Hide the menu by default on smaller screens */
     position: absolute;
     top: 100%;
@@ -60,10 +90,12 @@ nav ul li a:hover {
     width: 100%;
     text-align: center;
     z-index: 1;
+    transform: translateX(100%); /* Hide the menu off-screen */
   }
 
-  nav.open {
+  .nav-menu.open {
     display: block; /* Show the menu when open */
+    transform: translateX(0); /* Slide in from the right */
   }
 
   nav ul {
