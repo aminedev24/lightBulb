@@ -22,7 +22,9 @@
       "comprehensiveMaintenanceTitle": "包括的なメンテナンス",
       "comprehensiveMaintenanceDescription": "安全性を最大化するための専門的な電気メンテナンスを提供します。",
       "supportTitle": "24時間365日のサポート",
-      "supportDescription": "サポートチームはいつでも、どこでも対応します。"
+      "supportDescription": "サポートチームはいつでも、どこでも対応します。",
+      "readMore": "続きを読む",
+      "readLess": "折りたたむ"
     }
   }
   

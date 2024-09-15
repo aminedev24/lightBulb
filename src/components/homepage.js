@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import AnimateOnScroll from './animateOnScroll';
 import '../css/homepage.css';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const Home = () => {
   const { t } = useTranslation('home'); // Use the t function for translations
+  const [isReadMore, setIsReadMore] = useState(false); // Add state to toggle Read More
+
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
 
   return (
     <>
@@ -29,8 +34,13 @@ const Home = () => {
         <section id="about" className="about-us">
           <h2>{t('home.aboutTitle')}</h2>
           <p className="about-us-text">
-            {t('home.aboutDescription')}
+            {isReadMore
+              ? t('home.aboutDescription') // Full text
+              : `${t('home.aboutDescription').slice(0, 150)}...`} {/* Shortened version */}
           </p>
+          <button onClick={toggleReadMore} className="read-more-btn">
+            {isReadMore ? t('home.readLess') : t('home.readMore')}
+          </button>
           <a href="#/about" className="learn-more">
             {t('home.learnMore')}
           </a>
@@ -39,7 +49,14 @@ const Home = () => {
         {/* Services Section */}
         <section id="services" className="services-preview">
           <h2>{t('home.servicesTitle')}</h2>
-          <p>{t('home.servicesDescription')}</p>
+          <p className="about-us-text">
+            {isReadMore
+              ? t('home.servicesDescription') // Full text
+              : `${t('home.servicesDescription').slice(0, 150)}...`} {/* Shortened version */}
+          </p>
+          <button onClick={toggleReadMore} className="read-more-btn">
+            {isReadMore ? t('home.readLess') : t('home.readMore')}
+          </button>
           <a href="#/services" className="learn-more">
             {t('home.exploreServices')}
           </a>
