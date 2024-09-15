@@ -96,6 +96,7 @@ nav ul li a:hover {
   .nav-menu.open {
     display: block; /* Show the menu when open */
     transform: translateX(0); /* Slide in from the right */
+    z-index: 2;
   }
 
   nav ul {
