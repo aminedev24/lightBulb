@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import AnimateOnScroll from './animateOnScroll';
 import '../css/homepage.css';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
@@ -7,9 +7,28 @@ const Home = () => {
   const { t } = useTranslation('home'); // Use the t function for translations
   const [isReadMore, setIsReadMore] = useState(false); // Add state to toggle Read More
 
-  const toggleReadMore = () => {
-    setIsReadMore(!isReadMore);
+  // Refs for text elements to calculate their content length
+  const aboutTextRef = useRef(null);
+  const servicesTextRef = useRef(null);
+
+  // Function to handle read more toggle
+  const toggleReadMore = (section) => {
+    if (section === 'about') {
+      setIsReadMore((prev) => ({ ...prev, about: !prev.about }));
+    } else if (section === 'services') {
+      setIsReadMore((prev) => ({ ...prev, services: !prev.services }));
+    }
   };
+
+  useEffect(() => {
+    // Adjust text length dynamically based on the translated content
+    if (aboutTextRef.current) {
+      aboutTextRef.current.dataset.length = aboutTextRef.current.textContent.length;
+    }
+    if (servicesTextRef.current) {
+      servicesTextRef.current.dataset.length = servicesTextRef.current.textContent.length;
+    }
+  }, [t]);
 
   return (
     <>
@@ -33,13 +52,13 @@ const Home = () => {
         {/* About Us Section */}
         <section id="about" className="about-us">
           <h2>{t('home.aboutTitle')}</h2>
-          <p className="about-us-text">
-            {isReadMore
+          <p className="about-us-text" ref={aboutTextRef}>
+            {isReadMore.about
               ? t('home.aboutDescription') // Full text
-              : `${t('home.aboutDescription').slice(0, 150)}...`} {/* Shortened version */}
+              : `${t('home.aboutDescription').slice(0, 120)}...`} {/* Shortened version */}
           </p>
-          <button onClick={toggleReadMore} className="read-more-btn">
-            {isReadMore ? t('home.readLess') : t('home.readMore')}
+          <button onClick={() => toggleReadMore('about')} className="read-more-btn">
+            {isReadMore.about ? t('home.readLess') : t('home.readMore')}
           </button>
           <a href="#/about" className="learn-more">
             {t('home.learnMore')}
@@ -49,13 +68,13 @@ const Home = () => {
         {/* Services Section */}
         <section id="services" className="services-preview">
           <h2>{t('home.servicesTitle')}</h2>
-          <p className="about-us-text">
-            {isReadMore
+          <p className="about-us-text" ref={servicesTextRef}>
+            {isReadMore.services
               ? t('home.servicesDescription') // Full text
               : `${t('home.servicesDescription').slice(0, 150)}...`} {/* Shortened version */}
           </p>
-          <button onClick={toggleReadMore} className="read-more-btn">
-            {isReadMore ? t('home.readLess') : t('home.readMore')}
+          <button onClick={() => toggleReadMore('services')} className="read-more-btn">
+            {isReadMore.services ? t('home.readLess') : t('home.readMore')}
           </button>
           <a href="#/services" className="learn-more">
             {t('home.exploreServices')}
