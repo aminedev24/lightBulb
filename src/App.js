@@ -9,11 +9,14 @@ import Services from './components/services';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import './App.css';
+import ScrollToTop from './components/scrollTop';
 
 const App = () => {
   return (
     <I18nextProvider i18n={i18n}>
+     
       <Router>
+      <ScrollToTop />
         <Header /> {/* The Header is outside the Routes so it remains on every page */}
         <Routes>
           <Route path="/" element={<Home />} />
