@@ -1,38 +1,59 @@
 {
-    "about": {
-      "title": "About Us",
-      "storyTitle": "Our Story",
-      "storyDescription": "Towa Denki was founded on the principles of integrity, hard work, and a passion for solving complex electrical challenges. From our humble beginnings as a small local business, we have grown into a well-known electrical maintenance company renowned for our exceptional craftsmanship and customer service.",
-      "storyImageAlt": "Our Story",
-      "teamTitle": "Our Team",
-      "teamDescription": "Our success is driven by our people. Our team is composed of highly skilled and certified electricians who bring years of experience to every project. We believe in continuous learning and stay up-to-date with the latest industry trends and technologies.",
-      "teamImageAlt": "Our Team",
-      "valuesTitle": "Our Values",
-      "valuesImageAlt": "Our Values",
-      "values": {
-        "quality": {
-          "title": "Quality",
-          "description": "We are committed to delivering the highest quality of work, ensuring that every project we undertake is completed to perfection. Our attention to detail and dedication to excellence set us apart in the industry."
-        },
-        "safety": {
-          "title": "Safety",
-          "description": "Safety is at the forefront of everything we do. We adhere to strict safety protocols to protect our team, our clients, and their properties. Our rigorous safety measures ensure that every project is completed without incident."
-        },
-        "integrity": {
-          "title": "Integrity",
-          "description": "We believe in doing the right thing, always. Our transparent and honest approach has earned us the trust of our clients and partners. We hold ourselves accountable to the highest ethical standards."
-        },
-        "customerSatisfaction": {
-          "title": "Customer Satisfaction",
-          "description": "Our clients are our top priority. We listen to your needs, provide expert advice, and work tirelessly to ensure your satisfaction. Our commitment to delivering exceptional service is reflected in our long-term client relationships."
-        }
+  "about": {
+    "title": "About Us",
+    "storyTitle": "Our Story",
+    "storyDescription": "Towa Denki was founded on the principles of integrity, hard work, and a passion for solving complex electrical challenges. From our humble beginnings as a small local business, we have grown into a well-known electrical maintenance company renowned for our exceptional craftsmanship and customer service.",
+    "storyImageAlt": "Company history image",
+    
+    "teamTitle": "Our Team",
+    "teamDescription": "At Towa Denki, we believe that our team is the heart of our success. We are proud to have a dedicated team of skilled professionals who work tirelessly to deliver the best services to our clients.",
+    "teamImageAlt": "Team working together",
+    
+    "valuesTitle": "Our Values",
+    "valuesImageAlt": "Core values image",
+    "values": {
+      "quality": {
+        "title": "Quality",
+        "description": "We are committed to providing top-tier services and using only the highest quality materials for all our projects."
       },
-      "missionTitle": "Our Mission",
-      "missionDescription": "Our mission is to provide exceptional electrical services that enhance the safety, functionality, and comfort of our clients’ homes and businesses. We strive to exceed expectations through reliable, high-quality solutions tailored to each client's needs.",
-      "missionImageAlt": "Our Mission",
-      "visionTitle": "Our Vision",
-      "visionDescription": "Our vision is to be the leading electrical construction company in the region, recognized for our quality workmanship, innovation, and customer service. We aim to set new standards in the industry and continue to grow as a trusted partner for all electrical needs.",
-      "visionImageAlt": "Our Vision"
+      "safety": {
+        "title": "Safety",
+        "description": "Safety is our number one priority. We ensure all our projects meet the strictest safety standards."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "We conduct our business with the highest ethical standards, ensuring transparency and honesty in everything we do."
+      },
+      "customerSatisfaction": {
+        "title": "Customer Satisfaction",
+        "description": "Our clients are at the heart of our business. We strive to exceed their expectations on every project."
+      }
+    },
+
+    "missionTitle": "Our Mission",
+    "missionDescription": "Our mission is to provide reliable, innovative electrical solutions that enhance the daily lives of our clients while ensuring the utmost safety and efficiency.",
+    "missionImageAlt": "Mission statement image",
+    
+    "visionTitle": "Our Vision",
+    "visionDescription": "Our vision is to be the leading electrical maintenance company, recognized globally for our commitment to quality, safety, and customer satisfaction.",
+    "visionImageAlt": "Vision statement image",
+
+    "companyProfile": {
+      "title": "Company Profile",
+      "description": "Towa Denki is a renowned electrical maintenance company, offering high-quality services to clients across various industries. Our solutions are tailored to meet the specific needs of each client, ensuring reliability and efficiency in every project we undertake.",
+      "imageAlt": "Company profile image"
+    },
+    
+    "founderProfile": {
+      "title": "Founder Profile",
+      "description": "Our founder, Mr. Takashi Yamamoto, began Towa Denki with a clear vision: to deliver superior electrical services with integrity and dedication. His passion for innovation and quality has been the driving force behind our growth.",
+      "imageAlt": "Founder of the company"
+    },
+    
+    "ceoProfile": {
+      "title": "CEO Profile",
+      "description": "Our CEO, Ms. Yuki Sato, brings over 20 years of experience in the electrical industry. Her leadership has been instrumental in positioning Towa Denki as a leader in the industry, driving the company’s expansion and innovation.",
+      "imageAlt": "CEO of the company"
     }
   }
-  
+}

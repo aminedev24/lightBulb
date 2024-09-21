@@ -46,6 +46,39 @@ const About = () => {
           <img className='value-image' src={`${process.env.PUBLIC_URL}/assets/value.jpg`} alt={t('about.valuesImageAlt')} />
         </div>
       </div>
+
+      {/* Company Profile */}
+      <div className="section-container">
+        <div className="section-image">
+          <img src={`${process.env.PUBLIC_URL}/assets/company2.jpeg`} alt={t('about.companyImageAlt')} />
+        </div>
+        <div className="section-text">
+          <h2>{t('about.companyProfile.title')}</h2>
+          <p>{t('about.companyProfile.description')}</p>
+        </div>
+      </div>
+      
+      {/* Founder Profile */}
+      <div className="section-container reverse">
+        <div className="section-image">
+          <img src={`${process.env.PUBLIC_URL}/assets/founder.jpg`} alt={t('about.founderImageAlt')} />
+        </div>
+        <div className="section-text">
+          <h2>{t('about.founderProfile.title')}</h2>
+          <p>{t('about.founderProfile.description')}</p>
+        </div>
+      </div>
+      
+      {/* CEO Profile */}
+      <div className="section-container">
+        <div className="section-image">
+          <img src={`${process.env.PUBLIC_URL}/assets/ceo.jpg`} alt={t('about.ceoImageAlt')} />
+        </div>
+        <div className="section-text">
+          <h2>{t('about.ceoProfile.title')}</h2>
+          <p>{t('about.ceoProfile.description')}</p>
+        </div>
+      </div>
     
       {/* Mission and Vision */}
       <div className="mission-vision-content">

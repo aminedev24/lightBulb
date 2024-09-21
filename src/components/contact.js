@@ -14,12 +14,23 @@ const Contact = () => {
       />
       <div className="contact-container">
         <h2>{t('contactTitle')}</h2>
-        <p>{t('contactEmail')}: contact@email.com</p>
-        <p>{t('contactPhone')}: 000-000-0000</p>
+        <div className="contact-info">
+          <p><img src={`${process.env.PUBLIC_URL}/assets/email.png`} alt="Email Icon" className="icon" /> {t('contactEmail')}: contact@email.com</p>
+          <p><img src={`${process.env.PUBLIC_URL}/assets/phone.png`} alt="Phone Icon" className="icon" /> {t('contactPhone')}: 000-000-0000</p>
+        </div>
         <form className="contact-form">
-          <input type="text" placeholder={t('namePlaceholder')} required />
-          <input type="email" placeholder={t('emailPlaceholder')} required />
-          <textarea placeholder={t('messagePlaceholder')} required></textarea>
+          <div className="form-group">
+            <img src={`${process.env.PUBLIC_URL}/assets/id.png`} alt="Name Icon" className="form-icon" />
+            <input type="text" placeholder={t('namePlaceholder')} required />
+          </div>
+          <div className="form-group">
+            <img src={`${process.env.PUBLIC_URL}/assets/email.png`} alt="Email Icon" className="form-icon" />
+            <input type="email" placeholder={t('emailPlaceholder')} required />
+          </div>
+          <div className="form-group">
+            <img src={`${process.env.PUBLIC_URL}/assets/message.png`} alt="Message Icon" className="form-icon" />
+            <textarea placeholder={t('messagePlaceholder')} required></textarea>
+          </div>
           <button type="submit">{t('sendMessageButton')}</button>
         </form>
       </div>
