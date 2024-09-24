@@ -1,59 +1,30 @@
 {
   "about": {
     "title": "About Us",
-    "storyTitle": "Our Story",
-    "storyDescription": "Towa Denki was founded on the principles of integrity, hard work, and a passion for solving complex electrical challenges. From our humble beginnings as a small local business, we have grown into a well-known electrical maintenance company renowned for our exceptional craftsmanship and customer service.",
-    "storyImageAlt": "Company history image",
-    
-    "teamTitle": "Our Team",
-    "teamDescription": "At Towa Denki, we believe that our team is the heart of our success. We are proud to have a dedicated team of skilled professionals who work tirelessly to deliver the best services to our clients.",
-    "teamImageAlt": "Team working together",
-    
-    "valuesTitle": "Our Values",
-    "valuesImageAlt": "Core values image",
-    "values": {
-      "quality": {
-        "title": "Quality",
-        "description": "We are committed to providing top-tier services and using only the highest quality materials for all our projects."
-      },
-      "safety": {
-        "title": "Safety",
-        "description": "Safety is our number one priority. We ensure all our projects meet the strictest safety standards."
-      },
-      "integrity": {
-        "title": "Integrity",
-        "description": "We conduct our business with the highest ethical standards, ensuring transparency and honesty in everything we do."
-      },
-      "customerSatisfaction": {
-        "title": "Customer Satisfaction",
-        "description": "Our clients are at the heart of our business. We strive to exceed their expectations on every project."
-      }
-    },
-
     "missionTitle": "Our Mission",
-    "missionDescription": "Our mission is to provide reliable, innovative electrical solutions that enhance the daily lives of our clients while ensuring the utmost safety and efficiency.",
-    "missionImageAlt": "Mission statement image",
-    
-    "visionTitle": "Our Vision",
-    "visionDescription": "Our vision is to be the leading electrical maintenance company, recognized globally for our commitment to quality, safety, and customer satisfaction.",
-    "visionImageAlt": "Vision statement image",
-
-    "companyProfile": {
-      "title": "Company Profile",
-      "description": "Towa Denki is a renowned electrical maintenance company, offering high-quality services to clients across various industries. Our solutions are tailored to meet the specific needs of each client, ensuring reliability and efficiency in every project we undertake.",
-      "imageAlt": "Company profile image"
-    },
-    
-    "founderProfile": {
-      "title": "Founder Profile",
-      "description": "Our founder, Mr. Takashi Yamamoto, began Towa Denki with a clear vision: to deliver superior electrical services with integrity and dedication. His passion for innovation and quality has been the driving force behind our growth.",
-      "imageAlt": "Founder of the company"
-    },
-    
-    "ceoProfile": {
-      "title": "CEO Profile",
-      "description": "Our CEO, Ms. Yuki Sato, brings over 20 years of experience in the electrical industry. Her leadership has been instrumental in positioning Towa Denki as a leader in the industry, driving the company’s expansion and innovation.",
-      "imageAlt": "CEO of the company"
-    }
+    "aboutText": "At Towa Denki, we are dedicated to delivering exceptional services. Since our founding, we've been committed to providing reliable and sustainable electrical maintenance solutions for both commercial and residential clients.",
+    "missionDescription": "We aim to provide top-quality electrical maintenance services, ensuring safety and efficiency in every project.",
+    "storyTitle": "Our Story",
+    "storyDescription": "Learn about how we started and our commitment to excellence in the electrical industry.",
+    "teamTitle": "Our Team",
+    "teamDescription": "Meet the professional and experienced team members who power our company’s success.",
+    "servicesTitle": "Our Services",
+    "servicesDescription": "Discover our range of electrical maintenance services designed to meet your needs.",
+    "sustainabilityTitle": "Our Sustainability",
+    "sustainabilityDescription": "Learn how we incorporate sustainable practices in every aspect of our work.",
+    "ceoTitle": "Our CEO",
+    "ceoDescription": "Meet our visionary leader, dedicated to driving the company towards excellence.",
+    "founderTitle": "Our Founder",
+    "founderDescription": "Learn about the journey and vision of our founder who started it all.",
+    "backButton": "Back to All Elements",
+    "readMore": "Read more",
+    "sidebarImageAlt": "Sidebar Image",
+    "heroImageAlt": "Electrical Maintenance Hero",
+    "storyDetail": "Towa Denki was founded in 1995 with the vision of providing reliable electrical solutions. Over the years, we have expanded our services, embracing new technologies and methodologies to ensure our clients receive the highest quality of service. Our journey has been marked by a commitment to excellence, innovation, and customer satisfaction.",
+    "teamDetail": "Our team consists of highly skilled electricians, engineers, and project managers dedicated to delivering exceptional results. With years of experience in the industry, our professionals are equipped with the latest training and certifications to handle any electrical project. We believe in fostering a collaborative and supportive work environment, allowing our team to thrive and contribute their best.",
+    "servicesDetail": "We offer a comprehensive range of electrical maintenance services, including residential and commercial wiring, troubleshooting, repairs, and energy-efficient upgrades. Our team works closely with clients to tailor solutions that fit their specific needs and ensure the safety and efficiency of their electrical systems.",
+    "sustainabilityDetail": "At Towa Denki, we prioritize sustainability in our operations. We implement eco-friendly practices, such as using energy-efficient materials and reducing waste through recycling and responsible sourcing. Our goal is to minimize our environmental impact while providing high-quality services to our clients.",
+    "ceoDetail": "Our CEO, Jane Doe, has over 20 years of experience in the electrical industry. Under her leadership, Towa Denki has seen significant growth and innovation. Jane is passionate about empowering her team and fostering a culture of excellence. Her vision is to lead the company towards a sustainable and successful future.",
+    "founderDetail": "Towa Denki was founded by John Smith, whose vision was to create a company that prioritizes quality and customer satisfaction. John's extensive knowledge and passion for electrical systems laid the foundation for the company's success. Today, his principles of integrity and commitment to service continue to guide our operations."
   }
 }
