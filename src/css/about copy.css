@@ -1,0 +1,223 @@
+/* About Page Styles */
+.about-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.about-us-text{
+  padding: 30px;
+}
+
+.value-image {
+  height: 500px !important;
+}
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-title {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+
+.section-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.section-text {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 1rem;
+}
+
+.section-text h2 {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.section-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.section-image {
+  flex: 1;
+  text-align: center;
+}
+
+.section-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.values-container {
+  flex-direction: column;
+}
+
+.values-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.values-list li {
+  margin-bottom: 1rem;
+}
+
+.mission-vision-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mission-vision-item {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .mission-vision-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mission-vision-item {
+    flex: 1;
+    margin: 0 1rem;
+  }
+}
+
+.mission-vision-item h2 {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.mission-vision-item p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+.mission-vision-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  .section-container {
+    flex-direction: column;
+  }
+
+  .section-container.reverse {
+    flex-direction: column;
+  }
+
+  .mission-vision-content {
+    flex-direction: column;
+  }
+
+  .mission-vision-item {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .section-text h2 {
+    font-size: 2rem;
+  }
+
+  .section-text p,
+  .mission-vision-item p {
+    font-size: 1rem;
+  }
+
+  .section-image img {
+    border-radius: 4px;
+  }
+
+  .values-list {
+    font-size: 1rem;
+  }
+}
+
+
+.value-image {
+  height: 500px !important;
+}
+
+
+
+/* Styles for very large screens */
+@media (min-width: 1600px) {
+  .about-us {
+    padding: 6rem 4rem;
+  }
+
+  .section-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .section-container.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .section-text, .section-image {
+    flex: 1;
+    margin: 0;
+  }
+
+  .section-text {
+    padding: 2rem;
+  }
+
+  .section-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mission-vision-content {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .mission-vision-item {
+    flex: 1;
+    padding: 3rem;
+  }
+
+  .mission-vision-image {
+    max-width: 90%;
+    height: auto;
+  }
+}
