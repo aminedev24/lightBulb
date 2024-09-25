@@ -61,7 +61,7 @@ const About = () => {
                 <div className="element-info">
                   <h3>{t('about.storyTitle')}</h3>
                   <p>{t('about.storyDescription')}</p>
-                  <button onClick={() => handleReadMore(1)}>{t('about.readMore')}</button>
+                  <button className='readMoreButton' onClick={() => handleReadMore(1)}>{t('about.readMore')}</button>
                 </div>
               </div>
 
@@ -71,7 +71,7 @@ const About = () => {
                 <div className="element-info">
                   <h3>{t('about.teamTitle')}</h3>
                   <p>{t('about.teamDescription')}</p>
-                  <button onClick={() => handleReadMore(2)}>{t('about.readMore')}</button>
+                  <button className='readMoreButton' onClick={() => handleReadMore(2)}>{t('about.readMore')}</button>
                 </div>
               </div>
 
@@ -81,7 +81,7 @@ const About = () => {
                 <div className="element-info">
                   <h3>{t('about.servicesTitle')}</h3>
                   <p>{t('about.servicesDescription')}</p>
-                  <button onClick={() => handleReadMore(3)}>{t('about.readMore')}</button>
+                  <button className='readMoreButton'  onClick={() => handleReadMore(3)}>{t('about.readMore')}</button>
                 </div>
               </div>
 
@@ -91,7 +91,7 @@ const About = () => {
                 <div className="element-info">
                   <h3>{t('about.sustainabilityTitle')}</h3>
                   <p>{t('about.sustainabilityDescription')}</p>
-                  <button onClick={() => handleReadMore(4)}>{t('about.readMore')}</button>
+                  <button className='readMoreButton'  onClick={() => handleReadMore(4)}>{t('about.readMore')}</button>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ const About = () => {
                 <div className="element-info">
                   <h3>{t('about.ceoTitle')}</h3>
                   <p>{t('about.ceoDescription')}</p>
-                  <button onClick={() => handleReadMore(5)}>{t('about.readMore')}</button>
+                  <button className='readMoreButton'  onClick={() => handleReadMore(5)}>{t('about.readMore')}</button>
                 </div>
               </div>
 
@@ -111,7 +111,7 @@ const About = () => {
                 <div className="element-info">
                   <h3>{t('about.founderTitle')}</h3>
                   <p>{t('about.founderDescription')}</p>
-                  <button onClick={() => handleReadMore(6)}>{t('about.readMore')}</button>
+                  <button className='readMoreButton'  onClick={() => handleReadMore(6)}>{t('about.readMore')}</button>
                 </div>
               </div>
             </>

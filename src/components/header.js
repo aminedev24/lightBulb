@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/header.css';
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // New state for scroll tracking
   const { i18n } = useTranslation(); // Destructure i18n from useTranslation to switch languages
 
   const toggleMenu = () => {
@@ -16,8 +17,24 @@ const Header = () => {
     i18n.changeLanguage(lang);
   };
 
+  // Detect scrolling and update isScrolled state
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true); // User has scrolled
+      } else {
+        setIsScrolled(false); // User is at the top
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header className={isScrolled ? 'scrolled' : ''}>
       <h1 className="logo">
         <Link to='/'>Towa Denki</Link>
       </h1>
